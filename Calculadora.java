@@ -16,22 +16,22 @@ public class Ahorcado {
             System.out.println("Ingrese el primer numero");
             a = teclado.next();
             System.out.println("Ingrese el segundo numero");
-            a = teclado.next();
+            b = teclado.next();
 
 
             
     switch (opcion){
+		case 1: 
+			resultado = a + b;
+			break;
 		case 2: 
-			resultado = a1.suma();
+			resultado = a - b;
 			break;
 		case 3: 
-			resultado = a1.resta();
+			resultado = a / b;
 			break;
-		case 4: 
-			resultado = a1.multiplica();
-			break;
-		case 1:
-			resultado = a1.divide();
+		case 4:
+			resultado = a * b ;
 			break;
 			
 	           default: 
