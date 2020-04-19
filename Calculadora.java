@@ -9,7 +9,7 @@ public class Ahorcado {
             Integer resultado;
             do{
             System.out.println("Ingrese su operación /n 1 para sumar /n 2 para
-restar /n 3 para multiplicar /n 4 para dividir");
+            restar /n 3 para multiplicar /n 4 para dividir");
             opcion = teclado.next();
             }while(opcion < 1 && opcion > 4)
 
@@ -18,17 +18,26 @@ restar /n 3 para multiplicar /n 4 para dividir");
             System.out.println("Ingrese el segundo numero");
             a = teclado.next();
 
-            if(opcion.equals(1)){
-                resultado = a + b;                
-            }else if(opcion.equals(2)){
-                resultado = a - b;
-            }else if(opcion.equals(3)){
-                resultado = a * b;
-            }else{
-                resultado = a / b;
-            }
 
-            System.out.println("El resultado es " + resultado.toString());
-    }
+            
+    switch (opcion){
+		case 2: 
+			resultado = a1.suma();
+			break;
+		case 3: 
+			resultado = a1.resta();
+			break;
+		case 4: 
+			resultado = a1.multiplica();
+			break;
+		case 1:
+			resultado = a1.divide();
+			break;
+			
+	           default: 
+			System.out.println("OPCION INVALIDA.");
+			return;
+		}
+		System.out.println("Resultado: " +resultado);
+
 } 
-4. Dividir el grupo en dos y realizar las siguiente
