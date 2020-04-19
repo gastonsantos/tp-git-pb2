@@ -21,16 +21,16 @@ public class Ahorcado {
 
             
     switch (opcion){
-		case 1: 
+		case 4: 
 			resultado = a + b;
 			break;
-		case 2: 
+		case 3: 
 			resultado = a - b;
 			break;
-		case 3: 
+		case 2: 
 			resultado = a / b;
 			break;
-		case 4:
+		case 1:
 			resultado = a * b ;
 			break;
 			
